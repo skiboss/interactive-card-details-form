@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Frontend Mentor | Interactive card details form</title>
+</head>
+<body>
+
+  <!-- 0000 0000 0000 0000
+  Jane Appleseed
+  00/00
+
+  000
+
+  
+  -->
+  <div class="section" role="main">
+    <div class="section__one" role="image">
+      <picture role="image">
+        <source srcset="./images/bg-main-desktop.png" media="(min-width: 712px)">
+        <img src="./images/bg-main-mobile.png" alt="plain background" 
+          loading="lazy" decoding="async">
+      </picture>
+      <div class="card">
+        <div class="card-1">
+        <img class="" src="./images/bg-card-back.png" alt="image of card back"></div>
+        <div class="card-2"><img class="" src="./images/bg-card-front.png" alt="image of card front"></div>
+      </div>
+    </div>
+    <div class="section__two" role="article">
+      <div class="form">
+      <form>
+        <div class="form-item">
+          <div><label for="name">Cardholder Name</label></div>
+          <div><input type="text" name="name" id="name" placeholder="e.g. Jane Appleseed"></div>
+        </div>
+
+        <div class="form-item">
+          <div><label for="number">Card Number</label></div>
+          <div><input type="text" name="number" id="number" placeholder="e.g. 1234 5678 9123 0000"></div>
+        </div>
+
+        <div class="form-item date-cvc">
+          <span class="date-cvc-inner_1">
+            <div><label for="date">Exp. Date (MM/YY)</label></div>
+            <div class="date-cvc-inner_input">
+              <div><input type="text" name="month" id="month" placeholder="MM"></div>
+              <div><input type="text" name="year" id="year" placeholder="YY"></div>
+            </div>
+          </span>
+          <span class="date-cvc-inner_1">
+            <div><label for="cvc">CVC</label></div>
+            <div><input type="text" name="cvc" id="cvc" placeholder="e.g. 123"></div>
+          </span>
+        </div>
+
+        <div class="form-item">
+          <button type="button" class="block">Confirm</button>
+        </div>
+      </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Completed state start -->
+
+  <!-- Thank you!
+  We've added your card details
+  Continue -->
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="./js/index.js"></script>
+</body>
+</html>

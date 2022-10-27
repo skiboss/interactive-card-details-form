@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --dark-violet: hsl(278, 68%, 11%);
+    --dark-grayish-violet: hsl(279, 6%, 55%);
+    --light-grayish-violet: hsl(270, 3%, 87%);
+    --red: hsl(0, 100%, 66%);
+    --active-input-gradient: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+    --br: 7.5px;
+}
+
+html, body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    /* overflow: scroll; */
+}
+
+
+.section {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    width:100%;
+    /* position: relative; */
+}
+
+.section__one {
+    width: 100%;
+    position: relative;
+}
+
+.section__one img {
+    width: 100%;
+    height: 100%;
+    /* position: relative; */
+}
+
+.card {
+    /* position: absolute; */
+    
+    /* z-index: 1; */
+}
+
+.card-1 {
+    /* position: relative; */
+    width: 75%;
+    /* height: 50%; */
+    position: absolute;
+    top: 15%;
+    right: 5%;
+}
+
+.card-2 {
+    /* width: 30%; */
+    /* height: 50%; */
+    width: 75%;
+    /* height: 50%; */
+    position: absolute;
+    top: 50%;
+    left: 5%;
+}
+
+.section__two {
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__two form {
+    width: 89%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+label {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--dark-violet);
+}
+
+input[type="text"] {
+    width: 100%;
+    font-size: 18px;
+    font-family: 'Space Grotesk', sans-serif;;
+    padding: 0.7rem 0.9rem;
+    border-radius: var(--br);
+    border: 1px solid var(--light-grayish-violet);
+    margin-top: 0.5rem;
+}
+
+::placeholder {
+    color: var(--light-grayish-violet)
+}
+
+:-ms-input-placeholder {
+    color: var(--light-grayish-violet)
+}
+
+.form-item {
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+.date-cvc {
+    display: flex;
+    gap: 15px;
+}
+
+.date-cvc-inner_1 {
+    width: 50%;
+}
+
+.date-cvc-inner_2 {
+    width: 50%;
+}
+
+.date-cvc-inner_input {
+    display: flex;
+    gap: 10px
+}
+
+button {
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    padding: 1rem;
+    border: none;
+    border-radius: var(--br);
+    margin: 1rem 0 2rem;
+    font-size: 18px;
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: var(--dark-violet);
+    color: var(--white);
+}
+
+
+@media screen and (min-width: 712px) {
+    .section {
+        flex-direction: row;
+        height: 100vh;
+    }
+
+    .section__one {
+        width: 60%;
+        max-width: 300px;
+    }
+
+    .section__one img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .card {
+        /* position: absolute; */
+        
+        /* z-index: 1; */
+    }
+    
+    .card-1 {
+        /* position: relative; */
+        width: 115%;
+        /* height: 50%; */
+        position: absolute;
+        top: 55%;
+        right: -55%;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+    
+    .card-2 {
+        /* width: 30%; */
+        /* height: 50%; */
+        width: 115%;
+        /* height: 50%; */
+        position: absolute;
+        top: 22%;
+        left: 15%;
+    }
+
+    .section__two {
+        position: relative;
+        padding-top: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section__two form {
+        width: 55%;
+        max-width: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 15rem;
+        
+    }
+
+    /* .form {
+        position: absolute;
+        top: 20%;
+        left: 40%;
+    } */
+
+
+    label {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 11.5px;
+        font-weight: bold;
+        color: var(--dark-violet);
+    }
+}
+
+
+
+
+
+/* Attribution Styles */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
