@@ -18,6 +18,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: 100vw;
     height: 100vh;
     font-family: 'Space Grotesk', sans-serif;
@@ -47,17 +48,26 @@ html, body {
 
 .card {
     /* position: absolute; */
-    
+    color: var(--white)
     /* z-index: 1; */
 }
 
 .card-1 {
-    /* position: relative; */
     width: 75%;
     /* height: 50%; */
     position: absolute;
     top: 15%;
     right: 5%;
+}
+
+.card-back {
+    position: relative;
+}
+
+.card-cvc {
+    position: absolute;
+    top: 39.1%;
+    right: 17%
 }
 
 .card-2 {
@@ -68,6 +78,50 @@ html, body {
     position: absolute;
     top: 50%;
     left: 5%;
+    
+}
+
+.card-front {
+    position: relative;
+}
+
+.card-logo{
+    width: 20%;
+    height: auto;
+    object-fit: contain;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+.card-num {
+    position: absolute;
+    top: 52%;
+    left: 11.5%;
+    /* right: 11.5%; */
+    transform: translateX(2%);
+    letter-spacing: 2.5px;
+    /* font-weight: bold; */
+    font-size: 15px;
+}
+
+.card-name {
+    position: absolute;
+    top: 75%;
+    left: 8%;
+    font-size: 0.6rem;
+}
+
+.card-date {
+    position: absolute;
+    top: 75%;
+    right: 8%;
+    font-size: 0.6rem;
+}
+
+.card-1 img, .card-2 img {
+    box-shadow: 10px 15px 15px 25px rgba(9, 9, 9, 0.05);
+    border-radius: var(--br);
 }
 
 .section__two {
@@ -82,7 +136,7 @@ html, body {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-
+    display: none;
 }
 
 label {
@@ -148,6 +202,28 @@ button {
     color: var(--white);
 }
 
+.completed {
+    text-align: center;
+    width: 89%;
+    /* margin: 0 auto; */
+}
+
+.completed h2 {
+    color: var(--dark-violet);
+    font-size: 2rem;
+    letter-spacing: 4px;
+    padding: 1.5rem 0;
+}
+
+.completed p {
+    color: var(--dark-grayish-violet);
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    padding-bottom: 2.5rem;
+}
+
+
+
 
 @media screen and (min-width: 712px) {
     .section {
@@ -178,7 +254,7 @@ button {
         position: absolute;
         top: 55%;
         right: -55%;
-        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        
     }
     
     .card-2 {
@@ -189,6 +265,38 @@ button {
         position: absolute;
         top: 22%;
         left: 15%;
+    }
+
+    .card-num {
+        position: absolute;
+        top: 52%;
+        left: 7.5%;
+        letter-spacing: 4.5px;
+        /* font-weight: bold; */
+        font-size: 15px;
+    }
+
+    .card-logo{
+        width: 20%;
+        height: auto;
+        object-fit: contain;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+    }
+
+    .card-name {
+        position: absolute;
+        top: 75%;
+        left: 8%;
+        font-size: 0.875rem;
+    }
+    
+    .card-date {
+        position: absolute;
+        top: 75%;
+        right: 8%;
+        font-size: 14px;
     }
 
     .section__two {
@@ -207,7 +315,15 @@ button {
         justify-content: center;
         flex-direction: column;
         margin-left: 15rem;
+        display: none;
         
+    }
+
+    .completed {
+        width: 89%;
+        margin: 0 auto;
+        max-width: 500px;
+        margin-left: 15rem;
     }
 
     /* .form {
